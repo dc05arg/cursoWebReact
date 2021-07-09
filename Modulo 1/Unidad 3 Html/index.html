@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV de Diego Jr</title>
+    <!-- se linkea con archivo externo estilos.css -->
+    <link rel="stylesheet" href="estilos.css"> 
+    <!-- se crea estiqueta style -->
+    <style>
+        h4{
+            color: lightseagreen;
+            font-family: Verdana;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Diego Jr</h1>
     <img src="img/DiegoJRrecortada.jpg" alt="imagen cv DiegoJR" width="100%">
-    <!-- Flavia en alt= se usa por si no sale la imágen y para SEO por -->
-    <!-- lo que entendí ¿se puede agregar más frases? -->
-    <!-- También pude modificar el ancho de la imagen (asi queda para que se modifique en distintos dispositivos, no?) pero la altura no pude! 
-        ¿Habría que usar el editor de photos para no acortar a la persona o hay alguna técnica en html?   -->
-    <h3>Edad: 43</h3>
+   
+        <!-- se crea un estilo inline -->
+    <h3 style="color: lightslategrey; font-family: arial;">Edad: 43</h3>
     <h3>Domicilio: Av. Costanera 2021</h3>
     <h4>Series qué me gustan:</h4>
     <ul>
@@ -30,18 +37,18 @@
         <li>Spiderman</li>
     </ol>
     <h4>Perfil:</h4>
-    <!-- acá se podía usar el lorem ipsum? -->
+    <!-- a los parrafos 1 y 3 se le da color y centrado align centro -->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, eveniet nesciunt obcaecati cupiditate cum vitae
         delectus veniam explicabo ea, voluptas quam et? Pariatur delectus, doloribus illo earum accusamus tempore
         provident!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, earum magni necessitatibus deserunt mollitia
-        praesentium voluptatem hic. Possimus, dolore dignissimos cum ipsum, dolorem excepturi, distinctio provident
+        <!-- se utiliza selector de clase  y se agrega un color, tamaño de letra con etiqueta <span> y bold-->
+    <p class="prueba"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="medioparrafo"><b> Nostrum, earum magni necessitatibus deserunt mollitia
+        praesentium voluptatem hic.</b></span> Possimus, dolore dignissimos cum ipsum, dolorem excepturi, distinctio provident
         cupiditate consequuntur esse dolor!</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia repellat quisquam corporis magnam molestiae ea
         optio maxime harum labore totam ullam, nemo saepe ipsum reiciendis minima minus assumenda veniam autem?</p>
-       
-        <!-- ¿Esto es pone asi o de otra forma? -->
-    <p><b>Si querés contactarte completa el siguiente <a href="formulario.html" target="_blank">formulario</a> </b></p> 
+     <!-- se utiliza selector de clase -->  
+     <p class="prueba"><b>Si querés contactarte completa el siguiente <a href="formulario.html" target="_blank">formulario</a> </b></p> 
     
     <svg width="100" height="100">
         <!-- circulo centrado -->
@@ -49,6 +56,10 @@
         <!-- lo posiciona arriba a la izquierda -->
         <circle cx="20" cy="30" r="40" stroke="orange" stroke-width"4" fill="blue"/>
     </svg>
+    <!-- se crea div para crear un cuadrado celeste en estilos.css, aca muestra los escrito "cuadrado de color celeste"  -->
+    <div id="cuadrado1">
+        cuadrado de color celeste con letras azul oscuro y que más podríamos poner, que se yo. Muchas gracias! Pase el puntero del mouse por encima del cuadrado!
+    </div>
 </body>
 
 </html>
