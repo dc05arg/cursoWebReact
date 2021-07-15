@@ -1,0 +1,70 @@
+/* font-family: 'Otomanopee One', sans-serif; */
+/* font-family: 'Otomanopee One', sans-serif; */
+/* font-family: 'PT Sans', sans-serif; */
+
+h1{
+    font-family: 'Otomanopee One', sans-serif;;
+}
+
+h2, h3{                 
+    font-family: 'PT Sans', sans-serif;
+}
+
+.rojo{
+    width: 200px;
+    height: 200px;
+    color: black;
+    background-color: red;
+    margin-bottom: 25px;
+    padding: 30px;
+}
+
+.blanco{
+    width: 100%; /*acá mantiene el 100% del browser sin importar el tamaño*/
+    height: 200px;
+    color: black;
+    background-color: whitesmoke;
+    border: 5px solid black;
+    padding: 10px;          /*CONSULTA: ¿esta es la única forma de darle margen al texto dentro de algo o hay otra forma? Gracias
+    /*despues se puede usar border-left o -right, etc*/
+
+    /*padding: 55px 15px 15px 20px; desde arriba sentido horario
+      padding: 5px 20px 15px; arriba - laterales - abajo
+      padding: 55px 20px; eje Y - eje X */
+}
+
+.azul{
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: blue;
+    border: 5px dashed black;
+    margin: 0 auto; /*centra la figura en el browser*/
+    margin-top: 20px;
+    padding-top: 250px; /*aca estiro hacia arriba*/
+
+} 
+
+.verCajas i{  /*Le doy caracteristicas al icono*/
+    color: crimson;
+    font-size: 30px;
+}
+
+.verCajas a i{    /*acá se modifica el color del favicon ingresando por class verCajas a i */
+    color: green;
+    font-size: 50px;
+}
+
+                /*CONSULTA ¿Acá tendría que ser ".verCajas boxesYColumnas{ }" o como lo hice abajo?*/
+.boxesYColumnas{  /*le doy caracteristicas al parrafo dentro de div e icono*/
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+                /*CONSULTA ¿Acá tendría que ser ".verCajas boxesYColumnas a i{ }" o como lo hice abajo? Gracias*/
+.boxesYColumnas a i{  /*le doy caracteristicas al favicon dentro de boxesYColumnas a i*/
+    color: violet;
+    font-size: 40px;
+    
+}

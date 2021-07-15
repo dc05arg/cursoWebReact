@@ -1,0 +1,49 @@
+h1, h2{
+    font-family: 'Otomanopee One', sans-serif;;
+}
+
+.cajaVerde{
+    width: 150px;
+    height: 150px;
+    background-color: chartreuse;
+    border: 5px dashed black;
+    padding: 5px;
+    text-align: center;
+    color:  black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    box-sizing: border-box; /* Acá centra el cuadrado este, que por el border se agrando a la medida del cuadrado de abajo minuto 20:36* para seguir*/
+    border-radius: 20px 50px;
+    box-shadow: 0 0 5px black;
+}
+
+.cajaNaranja{
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    /*padding: 5px;*/  /*CONSULTA: si aca le dejo el padding este no me mantiene la forma con el de arriba al utilizar box-sizing, ¿existe alguna forma para esto?*/
+    margin-top: 15px;
+    text-align: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 3px 3px 5px  black;
+}
+
+p{
+    column-count: 2; /*cantidad de columnas*/
+    column-gap: 20px; /*espacio entre columnas*/
+}
+
+.parrafo{
+    background-color: coral;
+    padding: 3px 0px 3px 0px;    
+ }
+
+.parrafo p{
+    margin: 10px;  /*Aca le doy un margen al párrafo para despegarlo de los bordes*/
+    text-align: justify; /*text align solo el de la  class parrafo*/
+}
