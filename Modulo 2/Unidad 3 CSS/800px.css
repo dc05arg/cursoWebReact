@@ -1,0 +1,42 @@
+body {
+	padding: 0px;
+    margin: 0px;
+}
+#contenedor {
+	width: 100%;
+	background: #8FA68E;   
+}
+nav {
+	background: #da9a12;
+    width: 100%;
+}
+ul {
+	list-style-type:none;
+}
+a {
+	color:black;
+	text-decoration: none;
+}
+section {
+	background: #F1F2C0;
+	width: 100%;
+    margin-left: 0px;
+    border-top: 1px solid black;
+}
+aside {
+	background: #CCC59E;
+    width: 100%;
+    margin-left: 0px; 
+    border-top: 1px solid black;
+}
+p {
+    margin-left: 10px;
+}
+h2{
+    margin-left: 10px;
+}
+
+/*Padding a los enlace 1, 2 y 3*/
+li:nth-child(1){padding-bottom: 1em;}
+
+li:nth-child(2){padding-bottom: 1em;}
