@@ -1,0 +1,136 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+.holder{
+    margin: auto;
+}
+
+/* Logo */
+ #logo-header {
+	float: left;
+	padding: 5px 0 0 30px;
+	text-decoration: none;
+}
+#logo-header .logo:hover {
+	transform: scale(1.2);
+    transition: width 2s, height 2s, transform 2s;
+}
+#logo-header .logo {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+    font-family: 'Rampart One', cursive;
+}
+#logo-header .infologo {
+	display: block;
+	font-weight: 300;
+	font-size: 0.7em;
+    font-family: 'Roboto', sans-serif;
+    color: #999;
+    text-align: center;
+    padding-bottom: 15px;
+}
+nav{
+    background: white;
+    /* background: rgb(255, 102, 0); */
+    width: auto;
+    height: 50px;
+    margin: 0;
+    display: block;
+    /* position: fixed; */
+}
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    /* display: inline-block; */
+    width: 15.3%;
+    float: right;
+    padding-top: 5px;
+    /* margin-left: 30px; */
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+nav ul li a.activo{
+    /* background-color: #e9b951; */
+    background-color: #f31008c7;
+    /* background-color: #f1ad2f; */
+}
+.imagen{
+    margin-bottom: 0.5em;
+}
+
+/* footer{
+    background-color: rgb(255, 102, 0);
+    width: auto;
+    color: #333;
+    text-align: center;
+    padding: 1em 0;
+} */
+footer{
+    /* background-color: #e29302; */
+    background-color: #f31008c7;
+    clear: both;
+    color: #333;
+    padding: 0.8em 0;
+    margin-top: 1em;
+    text-align: center;
+    font-weight: 500;
+}
+.contacto{ /*del footer*/
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+/* INICIO CONTACTO O PEDIDO */
+.columna{
+    width: 50%;
+    padding: 0.6em; 
+    box-sizing: border-box;
+}
+.columna.left{
+    border-right: 1px solid gray;
+}
+.columna.right p{
+    font-size: 0.9em;
+}
+.columna.right ul li{
+    font-size: 0.8em;
+    list-style: none;
+}
+.formulario label{
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+}
+.formulario input, .formulario textarea{
+    border-radius: 5px;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 70%;
+}
+.formulario input[type="submit"]{ /*boton de enviar*/
+    font-size: 1em;
+    width: auto;
+    cursor: pointer;
+}
+.formulario textarea{/*donde escribimos el pedido*/
+    height: 10em;
+    resize: none;
+}
+.formulario .acciones{
+    text-align: center; /*centra el enviar*/
+}
+/* FIN CONTACTO O PEDIDO */
