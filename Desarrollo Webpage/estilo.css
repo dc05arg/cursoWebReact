@@ -33,8 +33,9 @@ body {
     text-align: center;
     padding-bottom: 15px;
 }
-.holder{
+.container{
     width: auto;
+    margin: 0;
 }
 nav{
     background: white;
@@ -43,6 +44,7 @@ nav{
     margin: 0;
     display: block;
     /* position: fixed; */
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 nav li{
     list-style: none;
@@ -63,10 +65,15 @@ nav ul li a{
     padding: 0.2em 0.4em;
 }
 nav ul li a:hover{
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    transform: scale(1.2);
+    transition: width 1.5s, height 1.5s, transform 1.5s;
 }
 nav ul li a.activo{
-    background-color: #f31008c7;
+    /* background-color: #f31008c7; */
+    /* color: white; */
+    color: #f31008c7;
+    transform: scale(1.2);
 }
 .imagen{
     margin-bottom: 0.5em;
@@ -85,7 +92,51 @@ footer{
     padding: 0;
     margin: 0;
 }
-/* INICIO CONTACTO O PEDIDO */
+.mapeado{
+    display: flex;
+    padding: 8.5em;
+    justify-content: space-around;
+}
+
+/* INICIO NOSOTROS */
+.nosotros{
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+.nosotros .info{
+    width: 75%;
+}
+.nosotros .info h4{
+    color: #333;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5em;
+}
+.nosotros .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+.nosotros img{
+    border-radius: 0.8em;
+    margin-bottom: 5px;
+}
+
+/* FIN NOSOTROS */
+
+/* INICIO UBICACIÓN */
+.direccion{
+    float: left;
+}
+.mapagoogle{
+    float: right;
+}
+/* FIN UBICACIÓN */
+
+/* INICIO PEDIDO */
 .columna{
     width: auto;
     padding: 0.6em; 
@@ -130,4 +181,4 @@ footer{
 .formulario .acciones{
     text-align: center; /*centra el enviar*/
 }
-/* FIN CONTACTO O PEDIDO */
+/* FIN PEDIDO */
