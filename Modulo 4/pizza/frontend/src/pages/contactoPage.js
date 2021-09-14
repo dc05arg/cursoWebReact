@@ -35,10 +35,10 @@ const contactoPage = (props) => {
                 <h2>Otras vías de contacto</h2>
                 <p>También se pueden comunicar con nosotros...</p>
                 <ul>
-                    <li><img src="favicon/reshot-icon-whatsapp-UANBKF398R.svg" alt="whatsapp" height="32px"/>  +54 11 15 3333-2222</li>
+                    <li><a href="https://web.whatsapp.com/" target="_blank"><img src="favicon/reshot-icon-whatsapp-UANBKF398R.svg" alt="whatsapp" height="32px"/>  +54 11 15 3333-2222</a></li>
                     <li><img src="favicon/reshot-icon-email-S6G5MXFJWA.svg" alt="email" height="32px"/>  contancto@pizzapizza.com.ar</li>
-                    <li><img src="favicon/reshot-icon-facebook-square-GCAE9R73J5.svg" alt="facebook" height="32px"/> @pizzapizza</li>
-                    <li><img src="favicon/reshot-icon-instagram-M2ZK3USTWR.svg" alt="instagram" height="32px"/>  @pizzapizza</li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="favicon/reshot-icon-facebook-square-GCAE9R73J5.svg" alt="facebook" height="32px"/> @pizzapizza</a></li>
+                    <li><a href="https://instagram.com/" target="_blank"><img src="favicon/reshot-icon-instagram-M2ZK3USTWR.svg" alt="instagram" height="32px"/>  @pizzapizza</a></li>
                 </ul>
             </div>
         </main>
