@@ -1,3 +1,4 @@
+import '../styles/components/pages/MenuPage.css';
 const MenuPage = (props) => {
     return (
         <main className="holder">

@@ -1,0 +1,28 @@
+#nos{
+    margin-left: 0.5em;
+}
+.nosotros{
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+.nosotros .info{
+    width: 75%;
+}
+.nosotros .info h4{
+    color: #333;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5em;
+}
+.nosotros .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+.nosotros img{
+    border-radius: 0.8em;
+    margin-bottom: 5px;
+}

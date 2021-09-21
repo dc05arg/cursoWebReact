@@ -15,11 +15,11 @@ function App() {
         <Header/>
         <Nav/>
         <Switch>
-          <Route path="/" exact component={HomePage}/>
-          <Route path="/nosotros" exact component={NosotrosPage}/>
-          <Route path="/menu" exact component={MenuPage}/>
-          <Route path="/ubicacion" exact component={UbicacionPage}/>
-          <Route path="/contacto" exact component={contactoPage}/>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/nosotros" exact component={NosotrosPage} />
+          <Route path="/menu" exact component={MenuPage} />
+          <Route path="/ubicacion" exact component={UbicacionPage} />
+          <Route path="/contacto" exact component={contactoPage} />
         </Switch>
         <Footer/>
       </Router>

@@ -1,0 +1,41 @@
+header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    top: 0;
+}
+.container{
+    width: auto;
+    margin: 0;
+}
+.logo-header {
+	float: left;
+	padding: 5px 0 0 30px;
+	text-decoration: none;
+}
+.logo {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+    font-family: 'Rampart One', cursive;
+
+}
+.log{
+    text-decoration: none;
+    color: black;
+}
+.logo:hover {
+	transform: scale(1.2);
+    transition: width 2s, height 2s, transform 2s;
+}
+.infologo {
+	display: block;
+	font-weight: 300;
+	font-size: 0.7em;
+    font-family: 'Roboto', sans-serif;
+    color: #999;
+    text-align: center;
+    padding-bottom: 15px;
+    
+}
