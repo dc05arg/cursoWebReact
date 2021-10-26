@@ -13,7 +13,7 @@ function App() {
   return (
       <Router>
         <Header/>
-        <Nav/>
+        {/* <Nav/> */}
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/nosotros" exact component={NosotrosPage} />
