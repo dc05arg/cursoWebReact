@@ -1,7 +1,7 @@
 import '../styles/components/pages/HomePage.css';
 const HomePage = (props) => {
     return (
-        <main className="holder">
+        <main>
             <div className="imagen">
                 <img src="images/foodiesfeed.com_messy-pizza-on-a-black-table-1980.jpg" alt="Pizza"/>
             </div>

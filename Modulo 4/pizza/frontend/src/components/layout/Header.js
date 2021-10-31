@@ -4,7 +4,7 @@ import Nav from './Nav';
 const Header = (props) => {
     return (
         <header>
-            <div className="holder">
+            <div>
                 <div className="logo-header">
                     <div className="logo"><a class="log" href="/">PizzaPizza</a></div>
 			        <div className="infologo">- desde 1956 -</div>
