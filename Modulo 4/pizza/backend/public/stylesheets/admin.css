@@ -1,0 +1,32 @@
+.boxlog{
+    display: flexblox;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 1px rgba(155, 155, 155, 0.2);
+    margin: auto;
+    width: 30%;
+
+}
+.row{
+    margin-top: 7px;
+}
+button{
+    margin-bottom: 7px;
+}
+.incorrecto{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.usuario{
+    float: right;
+}
+.menuUser{
+    display: flexbox;
+    margin: auto;
+    width: 50%;
+}
+.menu{
+    display: flexbox;
+    margin: auto;
+    text-align: center;  /*por ahora*/
+    padding: 7em; /*por ahora*/
+}
