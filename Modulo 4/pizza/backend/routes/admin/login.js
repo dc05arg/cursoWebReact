@@ -31,8 +31,8 @@ router.post('/', async (req, res, next) => {
     if (data != undefined) {
 
       //los siguientes 2 res. son para que se conecten con lo de app.js logout
-      // req.session.id_usuario = data.id;
-      // req.session.nombre = data.usuario;
+      req.session.id_usuario = data.id;
+      req.session.nombre = data.usuario;
 
       res.redirect('/admin/menu');
     } else {
