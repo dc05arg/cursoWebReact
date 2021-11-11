@@ -3,11 +3,64 @@
     <div class="usuario">
         <div class="row">
             <div class="col">
-                <p class="text-right">Hola {{ usuario }} <a href="/admin/login/logout" class="btn btn-sm btn-danger">Cerrar sesión<i class="fa fa-sig-out"></i></a></p>
+                <p class="text-end">Bienvenida/o {{ usuario }} <a href="/admin/login/logout" class="btn btn-sm btn-danger">Cerrar sesión <i class="fa fa-sign-out-alt"></i></a></p>
             </div>
         </div>
     </div>
-    <div>
-        <br><br><br><h2 class="menu">Proximamente Menú</h2>
+    <div class="row">
+        <div class="col-7">
+            <h2 class="menu">Menú</h2>
+        </div>
+        <div class="col-5 text-end">
+            <a href="/admin/menu/agregar" class="btn btn-sm btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo</a>
+        </div>
+    </div>
+
+    <div class="row"> 
+        <div class="col">
+            <table class="table table-hover">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Pizza</th>
+                            {{!-- <th scope="col" class="text-end">Modificaciones</th> --}}
+                            <th scope="col" class="text-center">Precio Chica</th>
+                            <th scope="col" class="text-end">Precio Grande</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each menu}}
+                        <tr>
+                            <th scope="row">{{id}}</th>
+                            <td>{{pizza}}</td>
+                            <td class="text-end">
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-pencil-alt"></i></a>
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </td>
+
+                            <th scope="row">{{id}}</th>
+                            <td>{{chica}}</td>
+                            <td class="text-end">
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-pencil-alt"></i></a>
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </td>
+
+                            <th scope="row">{{id}}</th>
+                            <td>{{grande}}</td>
+                            <td class="text-end">
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-pencil-alt"></i></a>
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+            </table>
+        </div>
     </div>
 </div>

@@ -1,22 +1,20 @@
+/* LOGIN */
 .boxlog{
     display: flexblox;
     background-color: whitesmoke;
     box-shadow: 2px 2px 1px rgba(155, 155, 155, 0.2);
     margin: auto;
     width: 30%;
+    padding: 1px;
+}
 
-}
-.row{
-    margin-top: 7px;
-}
-button{
-    margin-bottom: 7px;
-}
 .incorrecto{
     margin-top: 10px;
     font-weight: 500;
 }
-.usuario{
+
+/* MENU */
+/* .usuario{
     float: right;
 }
 .menuUser{
@@ -25,8 +23,13 @@ button{
     width: 50%;
 }
 .menu{
+    display: inline-flex;
+    margin: auto;
+    text-align: center; 
+} */
+
+.menuUser{
     display: flexbox;
     margin: auto;
-    text-align: center;  /*por ahora*/
-    padding: 7em; /*por ahora*/
+    width: 50%;
 }
