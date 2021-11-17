@@ -20,9 +20,10 @@ router.get('/agregar', (req, res, next) => {
   }) //cierra render
 });//cierra get
 
+//para agregar
 router.post('/agregar', async (req, res, next) => {
   try{
-    if (req.body.pizza != "" && req.body.chica != "" && req.body.grande != ""){
+    if (req.body.pizza != "" && req.body.ingredientes != "" && req.body.chica != "" && req.body.grande != ""){
       await menuModel.insertMenu(req.body);
       res.redirect('/admin/menu')
     } else {
@@ -39,5 +40,43 @@ router.post('/agregar', async (req, res, next) => {
     });
   }
 });
+
+//para eliminar
+router.get('/eliminar/:id', async (req, res, next) => {
+  var id = req.params.id;
+  await menuModel.deleteMenuById(id);
+  res.redirect('/admin/menu');
+});
+
+//para modificar
+router.get('/modificar/:id', async (req, res, next) => {
+  var id = req.params.id;
+  console.log(req.params.id); //para ver si funciona el id (se ve el id en consola)
+  var menues = await menuModel.getMenuById(id);
+
+  res.render('admin/modificar', {
+    layout: 'admin/layout',
+    menues
+  });
+});
+
+router.post('/modificar', async (req, res, next) => {
+  try{
+    var obj = {
+      pizza: req.body.pizza,
+      ingredientes: req.body.ingredientes,
+      chica: req.body.chica,
+      grande: req.body.grande
+    }
+    await menuModel.modificarMenuById(obj, req.body.id);
+  }
+  catch (error){
+    console.log(error)
+    res.render('admin/modificar', {
+      layout: 'admin/layout',
+      error: true, message: 'No se modificó el menú'
+    })
+  }
+})
 
 module.exports = router;

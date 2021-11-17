@@ -1,0 +1,36 @@
+{{!--
+<link rel="stylesheet" href="/stylesheets/admin.css"> --}}
+<div class="boxlog">
+    <div class="row" style="margin: 50px 0">
+        <div class="col-6 offset-2">
+            <h3>Modificar datos de Pizza:</h3>
+            <form action="/admin/menu/modificar" method="post">
+                <input type="hidden" value="{{menues.id}}" name="id">
+                <div class="form-group mb-3">
+                    <label for="nombrePizza" class="form-label">Nombre:</label>
+                    <input type="text" id="nombrePizza" class="form-control" placeholder="Nombre" name="pizza"
+                        value="{{menues.pizza}}">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="ingredientes" class="form-label">Ingredientes:</label>
+                    <input type="text" id="ingredientes" class="form-control" placeholder="Ingredientes"
+                        name="ingredientes" value="{{menues.ingredientes}}">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="precioChica" class="form-label">Precio pizza chica:</label>
+                    <input type="text" id="precioChica" class="form-control" placeholder="Precio pizza chica"
+                        name="chica" value="{{menues.chica}}">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="precioGrande" class="form-label">Precio pizza grande:</label>
+                    <input type="text" id="precioGrande" class="form-control" placeholder="Precio pizza grande"
+                        name="grande" value="{{menues.grande}}">
+                </div>
+                <button type="submit" class="btn btn-secondary">Modificar</button>
+            </form>
+            {{#if error}}
+                <h4>{{message}}</h4>
+            {{/if}}
+        </div>
+    </div>
+</div>

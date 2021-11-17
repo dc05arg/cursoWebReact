@@ -25,7 +25,6 @@ header{
 	font-weight: 700;
 	font-size: 1.2em;
     font-family: 'Rampart One', cursive;
-
 }
 .log{
     text-decoration: none;
@@ -77,6 +76,7 @@ nav ul li a{
 nav ul li a:hover{
     transform: scale(1.2);
     transition: width 1.5s, height 1.5s, transform 1.5s;
+    color: black;
 }
 nav ul li a.activo{
     color: #f31008c7;

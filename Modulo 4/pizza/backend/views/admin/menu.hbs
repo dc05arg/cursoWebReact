@@ -23,9 +23,10 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Pizza</th>
-                            {{!-- <th scope="col" class="text-end">Modificaciones</th> --}}
-                            <th scope="col" class="text-center">Precio Chica</th>
-                            <th scope="col" class="text-end">Precio Grande</th>
+                            <th scope="col">Ingredientes</th>
+                            <th scope="col">Precio Chica</th>
+                            <th scope="col">Precio Grande</th>
+                            <th scope="col" class="text-end">Editar/Borrar</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -33,28 +34,16 @@
                         <tr>
                             <th scope="row">{{id}}</th>
                             <td>{{pizza}}</td>
-                            <td class="text-end">
-                                <a href="#" class="btn btn-sm btn-secondary">
-                                <i class="fa fa-pencil-alt"></i></a>
-                                <a href="#" class="btn btn-sm btn-secondary">
-                                <i class="fa fa-trash" aria-hidden="true"></i></a>
-                            </td>
 
-                            <th scope="row">{{id}}</th>
+                            <td>{{ingredientes}}</td>
+
                             <td>{{chica}}</td>
-                            <td class="text-end">
-                                <a href="#" class="btn btn-sm btn-secondary">
-                                <i class="fa fa-pencil-alt"></i></a>
-                                <a href="#" class="btn btn-sm btn-secondary">
-                                <i class="fa fa-trash" aria-hidden="true"></i></a>
-                            </td>
-
-                            <th scope="row">{{id}}</th>
+                                                    
                             <td>{{grande}}</td>
                             <td class="text-end">
-                                <a href="#" class="btn btn-sm btn-secondary">
+                                <a href="/admin/menu/modificar/{{id}}" class="btn btn-sm btn-secondary">
                                 <i class="fa fa-pencil-alt"></i></a>
-                                <a href="#" class="btn btn-sm btn-secondary">
+                                <a href="/admin/menu/eliminar/{{id}}" class="btn btn-sm btn-secondary">
                                 <i class="fa fa-trash" aria-hidden="true"></i></a>
                             </td>
                         </tr>
