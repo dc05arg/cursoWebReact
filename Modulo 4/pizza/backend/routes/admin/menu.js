@@ -75,8 +75,8 @@ router.post('/modificar', async (req, res, next) => {
     res.render('admin/modificar', {
       layout: 'admin/layout',
       error: true, message: 'No se modificó el menú'
-    })
+    });
   }
-})
+});
 
 module.exports = router;
