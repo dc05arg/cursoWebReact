@@ -30,6 +30,9 @@ header{
     text-decoration: none;
     color: black;
 }
+.log a{
+    color: black;
+}
 .logo:hover {
 	transform: scale(1.2);
     transition: width 2s, height 2s, transform 2s;

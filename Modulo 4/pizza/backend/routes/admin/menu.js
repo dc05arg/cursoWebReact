@@ -69,6 +69,7 @@ router.post('/modificar', async (req, res, next) => {
       grande: req.body.grande
     }
     await menuModel.modificarMenuById(obj, req.body.id);
+    res.redirect('/admin/menu');
   }
   catch (error){
     console.log(error)
