@@ -2,7 +2,7 @@ import '../styles/components/pages/contactoPage.css';
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const contactoPage = (props) => {
+const ContactoPage = (props) => {
 
     const initialForm = {
         nombre: '',
@@ -50,7 +50,7 @@ const contactoPage = (props) => {
                         </p>
                         <p>
                             <label>Apellido</label>
-                            <input type="text"name="apellido" value={formData.apellido} onChange={handleChange}/>  
+                            <input type="text" name="apellido" value={formData.apellido} onChange={handleChange}/>  
                         </p>
                         <p>
                             <label>Dirección</label>
@@ -91,4 +91,4 @@ const contactoPage = (props) => {
         </main>
     );
 }
-export default contactoPage;
+export default ContactoPage;

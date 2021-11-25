@@ -22,6 +22,8 @@ const MenuPage = (props) => {
     return (
         <section className="holder">
             <h2>Menú</h2>
+            <table className="menu">
+
             {loading ? (
                 <p>Cargando   </p>
             ) : (
@@ -29,10 +31,11 @@ const MenuPage = (props) => {
                     imag={item.imagen} ingredient={item.ingredientes}
                     chic={item.chica} grand={item.grande} body={item.cuerpo} />)
             )}
+            </table>
         </section>
     )
 }
-// const MenuPage = (props) => {
+//  const MenuPage = (props) => {
 //     return (
 //         <main className="holder">
 //         <table className="menu">

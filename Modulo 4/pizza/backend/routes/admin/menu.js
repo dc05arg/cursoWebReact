@@ -49,7 +49,7 @@ router.post('/agregar', async (req, res, next) => {
   try{
 
     var img_id = '';
-    if (req.files && Object.keys(req.files).lenght > 0) {
+    if (req.files && Object.keys(req.files).length > 0) {
       imagen = req.files.imagen;
       img_id = (await uploader(imagen.tempFilePath)).public_id;
     }
@@ -111,7 +111,7 @@ router.post('/modificar', async (req, res, next) => {
       img_id = null;
       borrar_img_vieja = true;
     } else {
-        if (req.files && Object.keys(req.files).lenght > 0) {
+        if (req.files && Object.keys(req.files).length > 0) {
           imagen = req.files.imagen;
           img_id = (await uploader(imagen.tempFilePath)).public_id;
           borrar_img_vieja = true;

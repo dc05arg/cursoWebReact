@@ -9,7 +9,7 @@ router.get('/menu', async function (req, res, next) {
 
     menu = menu.map(menu => {
         if (menu.img_id) {
-            const imagen = cloudinary.image(menu.img_id, {
+            const imagen = cloudinary.url(menu.img_id, {
                 width: 960,
                 height: 200,
                 crop: 'fill'
@@ -35,12 +35,12 @@ router.post('/contacto', async (req, res) => {
     const mail = {
         to: 'cavallidh@gmail.com',
         subjet: 'Contacto web',
-        html: `${req.body.nombre} ${req.body.apellido}  se contacto a través de la web. <br>
+        html: `${req.body.nombre} ${req.body.apellido} se contacto a través de la web. <br>
         Su dirección de envío es: ${req.body.direccion} <br>
         Su localidad es: ${req.body.localidad} <br>
         Su teléfono es: ${req.body.telefono} <br>
         Su correo electrónico es: ${req.body.email} <br>
-        Su pedido es: ${req.body.pedido} <br>` //modificar para la pizza
+        Su pedido es: ${req.body.pedido}` //modificar para la pizza
     }
     
     const transport = nodemailer.createTransport({

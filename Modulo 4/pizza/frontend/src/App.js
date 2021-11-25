@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./components/layout/Header";
-import Nav from "./components/layout/Nav";
+// import Nav from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
-import contactoPage from './pages/contactoPage';
+import ContactoPage from './pages/ContactoPage';
 import HomePage from './pages/HomePage';
 import NosotrosPage from './pages/NosotrosPage';
 import MenuPage from './pages/MenuPage';
@@ -19,7 +19,7 @@ function App() {
           <Route path="/nosotros" exact component={NosotrosPage} />
           <Route path="/menu" exact component={MenuPage} />
           <Route path="/ubicacion" exact component={UbicacionPage} />
-          <Route path="/contacto" exact component={contactoPage} />
+          <Route path="/contacto" exact component={ContactoPage} />
         </Switch>
         <Footer/>
       </Router>

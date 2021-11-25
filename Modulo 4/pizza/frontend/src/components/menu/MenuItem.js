@@ -5,11 +5,11 @@ const MenuItem = (props) => {
 
     return (
         <div className="menu">
-            <h1>{pisa}</h1>
-            <img src={imag} />
-            <h2>{ingredient}</h2>
-            <h2>{chic}</h2>
-            <h2>{grand}</h2>
+            <h3>{pisa}</h3>
+            <img alt="" src={imag} />
+            <h4>{ingredient}</h4>
+            <h4>{chic}</h4>
+            <h4>{grand}</h4>
             <div dangerouslySetInnerHTML={{ __html: body}}/>
             <hr />
         </div>
