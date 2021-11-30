@@ -1,0 +1,44 @@
+.holder {
+    font-family: 'Open Sans', sans-serif;
+    /* margin-top: 7%; */
+    width: 960px;
+    max-width: 100%;
+    height: auto;
+}
+#nombrePizza{
+    font-weight: 500;
+    background-color: #f31008c7;
+    color: whitesmoke;
+    padding-left: 2%;
+    padding-top: 0.2%;
+    padding-bottom: 0.3%;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contenedorMenu{
+    margin-top: 7px;
+}
+.ingredientePrecio{
+    font-weight: 600;
+    font-size: 18px;
+    font-variant: small-caps;
+    margin: 0 0.7em;
+    margin-top: 1em;
+    color: rgba(0, 0, 0, 0.712);
+}
+
+#imgMenuItem{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#nombrePizza:hover {
+    transform: scale(1.05);
+    transition: 1s ease;
+}

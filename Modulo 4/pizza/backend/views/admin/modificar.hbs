@@ -1,13 +1,13 @@
-{{!--
-<link rel="stylesheet" href="/stylesheets/admin.css"> --}}
+<link rel="stylesheet" href="/stylesheets/admin.css">
+
 <div class="boxlog">
     <div class="row" style="margin: 50px 0">
-        <div class="col-6 offset-2">
-            <h3>Modificar datos de Pizza:</h3>
+        <div class="col-6 offset-3">
+            <h3>Modificar datos:</h3>
             <form action="/admin/menu/modificar" method="post" enctype="multipart/form-data">
                 <input type="hidden" value="{{menues.id}}" name="id">
                 <div class="form-group mb-3">
-                    <label for="nombrePizza" class="form-label">Nombre:</label>
+                    <label for="nombrePizza" class="form-label">Nombre Pizza:</label>
                     <input type="text" id="nombrePizza" class="form-control" placeholder="Nombre" name="pizza"
                         value="{{menues.pizza}}">
                 </div>
@@ -36,7 +36,11 @@
                     <input type="text" id="precioGrande" class="form-control" placeholder="Precio pizza grande"
                         name="grande" value="{{menues.grande}}">
                 </div>
+                
                 <button type="submit" class="btn btn-secondary">Modificar</button>
+                
+                <button type="button" onclick="history.back()" name="volver atrás" value="volver atrás" class="btn btn-secondary" >Volver</button>
+
             </form>
             {{#if error}}
                 <h4>{{message}}</h4>

@@ -13,6 +13,34 @@ header{
     left: 0;
     top: 0;
 }
+/*Nav*/
+
+nav{
+    width: 100%;
+    height: 50px;
+    background: white;
+    border-top: 5px solid white;
+    margin: 0;
+    display: block;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    width: 16%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
 
 /* Logo */
 .logo-header {
@@ -50,41 +78,7 @@ header{
     width: auto;
     margin: 0;
 }
-nav{
-    background: white;
-    width: 100%;
-    height: 50px;
-    border-top: 5px solid white;
-    margin: 0;
-    display: block;
-    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-nav li{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-nav ul li{
-    width: 15.3%;
-    display: inline-flex;
-    justify-content: flex-end;
-}
-nav ul li a{
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    padding: 0.2em 0.4em;
-}
-nav ul li a:hover{
-    transform: scale(1.2);
-    transition: width 1.5s, height 1.5s, transform 1.5s;
-    color: black;
-}
-nav ul li a.activo{
-    color: #f31008c7;
-    transform: scale(1.2);
-}
+
 .imagen img{
     margin-top: 2em;
     width: 100%;
@@ -110,128 +104,3 @@ footer{
     padding: 8.5em;
     justify-content: space-around;
 }
-
-/* INICIO INDEX MAIN */
-
-/* FIN INDEX MAIN */
-
-/* INICIO NOSOTROS */
-#nos{
-    margin-left: 0.5em;
-}
-.nosotros{
-    margin: 1em 0;
-    padding: 1em;
-    overflow: hidden;
-}
-.nosotros .info{
-    width: 75%;
-}
-.nosotros .info h4{
-    color: #333;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: 500;
-    margin: 0 0 1em;
-    border-bottom: 1px solid #333;
-    padding-bottom: 0.5em;
-}
-.nosotros .info p{
-    font-size: 0.8em;
-    line-height: 1.2em;
-}
-.nosotros img{
-    border-radius: 0.8em;
-    margin-bottom: 5px;
-}
-
-/* FIN NOSOTROS */
-
-/* INICIO MENÚ */
-/* table{
-    width: 768px;
-    border-collapse: collapse;
-}
-table, tr, td {
-    border-bottom: 1px solid #ddd;
-}
-table.menu {
-    margin-left: auto;
-    margin-right: auto;
-}
-td{
-      text-align: center;
-      width: 17em;
-      padding-top: 3px;
-}
-tr:nth-child(even){
-    background-color: #f2f2f2;
-}
-tr:hover {
-    background-color: #f31008c4;
-    color: whitesmoke;
-}
-.encabezado{
-    height: 40px;
-    font-size: 20px;
-    background-color: #f31008c7;
-    color: whitesmoke;
-} */
-
-/* FIN MENÚ */
-
-/* INICIO UBICACIÓN */
-.direccion{
-    float: left;
-}
-.mapagoogle{
-    float: right;
-}
-/* FIN UBICACIÓN */
-
-/* INICIO CONTACTO */
-.columna{
-    width: auto;
-    padding: 0.6em; 
-    box-sizing: border-box;
-}
-.left{
-    float: left;
-}
-.right{
-    float: right;
-}
-.columna.right p{
-    font-size: 0.9em;
-}
-.columna.right ul li{
-    font-size: 0.8em;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    padding: 0.5em;
-}
-.formulario label{
-    vertical-align: top;
-    width: 20%;
-    display: inline-block;
-}
-.formulario input, .formulario textarea{
-    border-radius: 5px;
-    padding: 0.4em 0.6em;
-    font-size: 0.8em;
-    width: 70%;
-}
-.formulario input[type="submit"]{ /*boton de enviar*/
-    font-size: 1em;
-    width: auto;
-    cursor: pointer;
-}
-.formulario textarea{/*donde escribimos el pedido*/
-    height: 10em;
-    resize: none;
-}
-.formulario .acciones{
-    text-align: center; /*centra el enviar*/
-}
-/* FIN CONTACTO */

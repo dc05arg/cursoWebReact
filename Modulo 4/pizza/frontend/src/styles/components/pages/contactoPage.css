@@ -1,8 +1,8 @@
-/* .holder{
+.holder{
     width: 960px;
-} */
-.contenedor{width: 960px;}
-
+    max-width: 100%;
+    height: auto;
+}
 .columna{
     width: auto;
     padding: 0.6em; 

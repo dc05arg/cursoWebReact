@@ -1,22 +1,22 @@
 .holder{
     width: 960px;
     margin: auto;
-}
-.columnas{
-    overflow: hidden;
+    margin-top: 7%;
+    max-width: 100%;
+    height: auto;
 }
 
 .direccion{
     float: left;
-    width: 40%;
+    padding:10px
 }
 .mapagoogle{
-    margin-top: 30px;
+    margin-top: 20px;
     float: right;
     border: 0; 
-    width: 30%;
     border-style: none;
-    padding-bottom: 10px;
+    padding: 10px;
+    padding-bottom: 30px;
 }
 
 iframe{

@@ -21,7 +21,7 @@ const ContactoPage = (props) => {
     const handleChange = e => {
         const { name, value } = e.target;
         setFormData(oldData => ({
-            oldData,
+            ...oldData,
             [name]: value //forma dinámica
         }));
     }
@@ -66,7 +66,7 @@ const ContactoPage = (props) => {
                         </p>
                         <p>
                             <label>Email</label>
-                            <input type="text" name="email" value={formData.email} onChange={handleChange}/>  
+                            <input type="text" name="email" value={formData.email} onChange={handleChange}/>
                         </p>
                         <p>
                             <label>Pedido</label>

@@ -145,6 +145,7 @@ footer{
 
 /* INICIO MENÚ */
 table{
+    /*margin-top: 10px;*/
     width: 768px;
     border-collapse: collapse;
 }
@@ -177,6 +178,11 @@ tr:hover {
 /* FIN MENÚ */
 
 /* INICIO UBICACIÓN */
+.mapeado{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
 .direccion{
     float: left;
 }

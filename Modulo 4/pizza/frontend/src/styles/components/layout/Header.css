@@ -1,14 +1,11 @@
 header{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     height: 50px;
     left: 0;
     top: 0;
 }
-/* .container{
-    width: auto;
-    margin: 0;
-} */
+
 .logo-header {
 	float: left;
 	padding: 5px 0 0 30px;
@@ -36,6 +33,5 @@ header{
     font-family: 'Roboto', sans-serif;
     color: #999;
     text-align: center;
-    padding-bottom: 15px;
-    
+    padding-bottom: 15px;  
 }
